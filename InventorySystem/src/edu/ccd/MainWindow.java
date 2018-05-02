@@ -200,6 +200,9 @@ public class MainWindow extends JFrame implements ActionListener {
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(_leftside/2,_top+50,_labelwidth*7, _height*15);
         System.out.println(table.isCellEditable(1,0));
+        table.setAutoCreateRowSorter(true);
+        table.setSelectionBackground(Color.ORANGE);
+
         mainpanel.add(scrollPane);
 
 
@@ -286,7 +289,7 @@ public class MainWindow extends JFrame implements ActionListener {
                 } catch (InvalidUserOrNoPermissionException e1) {
                     e1.printStackTrace();
                 }
-
+//todo: Create add success window
                 System.out.print("UID:" + ((InventoryItem) item).getInventoryNumber() + " Name:" + ((InventoryItem) item).getName() + " Value:" + ((InventoryItem) item).getValue());
                 if (item instanceof SerializedItem) {
                     System.out.println("Serial number:" + ((SerializedItem) item).getSerialnumber());
@@ -318,6 +321,19 @@ public class MainWindow extends JFrame implements ActionListener {
             } catch (Exception me) {
                 me.printStackTrace();
             }
+        }
+
+        if (e.getSource() instanceof JButton && e.getSource().equals(deleteButton)) {
+            int i = table.getSelectedRow();
+            model.removeRow(i);
+            try {
+                idb.DeleteInventoryItem(whichContext.get(i).inventory_number);
+            } catch (InvalidUserOrNoPermissionException e1) {
+                e1.printStackTrace();
+            }
+
+
+
         }
         if (e.getSource() instanceof JComboBox && e.getSource().equals(kinds)) {
             try {
@@ -377,6 +393,7 @@ public class MainWindow extends JFrame implements ActionListener {
             }
             Object[] thisRow = {kind , rows.getName(), rows.getValue(),serial};
             model.addRow(thisRow);
+
         }
     }
 
