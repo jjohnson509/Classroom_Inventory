@@ -1,19 +1,26 @@
 package edu.ccd;
+import javax.swing.*;
+import javax.swing.table.*;
+
+import java.awt.*;
 
 import edu.ccd.appUI.Login;
 import edu.ccd.appUI.Subject;
 import edu.ccd.appUI.ConcreteObserver;
 import edu.ccd.model.SerializedItem;
+import edu.ccd.model.database.InvalidUserOrNoPermissionException;
 import edu.ccd.model.database.InventoryDatabaseMySQL;
 import edu.ccd.model.database.InventoryItem;
 import edu.ccd.model.security.SecurityContext;
 
-import javax.swing.*;
+import javax.swing.JTable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentListener;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.rmi.server.UID;
 import java.util.ArrayList;
-import java.util.EventListener;
+
 
 public class MainWindow extends JFrame implements ActionListener {
 
@@ -21,6 +28,7 @@ public class MainWindow extends JFrame implements ActionListener {
         String kind;
         String description;
     }
+
 
     private JPanel mainpanel;
     private JLabel userLabel;
@@ -30,6 +38,7 @@ public class MainWindow extends JFrame implements ActionListener {
     private InventoryDatabaseMySQL idb = new InventoryDatabaseMySQL();
 
     //new components
+    private JTable table;
     private JLabel uidLabel;
     private JTextField uid;
     private JLabel nameLabel;
@@ -41,16 +50,22 @@ public class MainWindow extends JFrame implements ActionListener {
     private JButton addButton;
     private JButton changeUser;
     private JLabel whichLabel;
+    private JList<ArrayList> whichhole;
     private JComboBox<String> which;
     private JLabel serialLabel;
     private JTextField serialNumber;
+    private DefaultTableModel model;
 
     private ArrayList<InventoryItem> whichContext = new ArrayList<InventoryItem>();
     private ArrayList<kindsList> kindListOptions = new ArrayList<kindsList>();
 
+    private boolean DEBUG = false;
+
     private SecurityContext applicationSecurityContext = new SecurityContext();
 
     public static MainWindow the = null;
+
+
 
     public void setApplicationSecurityContext(String name, String token) {
         applicationSecurityContext.setSecurityContext(name, token);
@@ -80,9 +95,9 @@ public class MainWindow extends JFrame implements ActionListener {
         int _height = 25;
 
         setTitle("Inventory System");
-        setSize(_rightside * 4, 450);
+        setSize(_rightside * 8, 750);
         mainpanel = new JPanel();
-        mainpanel.setSize(_rightside * 4, 450);
+        mainpanel.setSize(_rightside * 7, 750);
         mainpanel.setLayout(null);
         add(mainpanel);
 
@@ -109,7 +124,7 @@ public class MainWindow extends JFrame implements ActionListener {
         mainpanel.add(whichLabel);
 
         which = new JComboBox<String>();
-        which.setBounds(_rightside, _top, _labelwidth * 2, _height);
+        //which.setBounds(_rightside, _top, _labelwidth * 2, _height * 2);
         which.addActionListener(this);
         mainpanel.add(which);
 
@@ -162,14 +177,42 @@ public class MainWindow extends JFrame implements ActionListener {
         mainpanel.add(deleteButton);
 
         changeUser = new JButton("Change User");
-        changeUser.setBounds(_rightside - (_labelwidth / 4), _top += 30, _labelwidth * 2, _height);
+        changeUser.setBounds(350 , 13, _labelwidth, _height-5);
         changeUser.addActionListener(this);
         mainpanel.add(changeUser);
+
+
+
+
+        String[] columnNames = {"Kind","Name","Value", "Serial Number"};
+        table = new JTable();
+        model = new DefaultTableModel()
+        {
+            public boolean isCellEditable(int row,int column){
+                if(column == 0) return false;
+                return true;
+            }
+        };
+        model.setColumnIdentifiers(columnNames);
+        table.setModel(model);
+        table.setPreferredScrollableViewportSize(new Dimension(500, 70));
+        table.setFillsViewportHeight(true);
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setBounds(_leftside/2,_top+50,_labelwidth*7, _height*15);
+        System.out.println(table.isCellEditable(1,0));
+        mainpanel.add(scrollPane);
+
 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+
+        ;
     }
+
+
+
+
 
     public void loadKinds() {
         try {
@@ -185,6 +228,8 @@ public class MainWindow extends JFrame implements ActionListener {
             e.printStackTrace();
         }
     }
+
+
 
     public void applyOperationalPermissions() {
         uidLabel.setVisible(false);
@@ -227,13 +272,35 @@ public class MainWindow extends JFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() instanceof JButton && e.getSource().equals(addButton)) {
-            //todo: How do we add an item?
-            InventoryItem item = whichContext.get(which.getSelectedIndex());
-            System.out.print("UID:" + item.getInventoryNumber() + " Name:" + item.getName() + " Value:" + item.getValue());
-            if (item instanceof SerializedItem) {
-                System.out.println("Serial number:" + ((SerializedItem) item).getSerialnumber());
-            } else {
-                System.out.println();
+            try {
+                Object item = Class.forName(kindListOptions.get(kinds.getSelectedIndex()).kind).getDeclaredConstructor().newInstance();
+                ((InventoryItem) item).setName(name.getText());
+                ((InventoryItem) item).setValue(Float.parseFloat(value.getText()));
+
+
+                if (item instanceof SerializedItem) {
+                    ((SerializedItem) item).setSerialnumber(serialNumber.getText());
+                }
+                try {
+                    MainWindow.the().getIdb().AddInventoryItem(((InventoryItem) item));
+                } catch (InvalidUserOrNoPermissionException e1) {
+                    e1.printStackTrace();
+                }
+
+                System.out.print("UID:" + ((InventoryItem) item).getInventoryNumber() + " Name:" + ((InventoryItem) item).getName() + " Value:" + ((InventoryItem) item).getValue());
+                if (item instanceof SerializedItem) {
+                    System.out.println("Serial number:" + ((SerializedItem) item).getSerialnumber());
+                } else {
+                    System.out.println();
+                }
+                try {
+                    idb.AddInventoryItem(((InventoryItem) item));
+                } catch (InvalidUserOrNoPermissionException e1) {
+                    e1.printStackTrace();
+
+                }
+            }catch(Exception me){
+                me.printStackTrace();
             }
         }
         if (e.getSource() instanceof JButton && e.getSource().equals(changeUser)) {
@@ -257,9 +324,12 @@ public class MainWindow extends JFrame implements ActionListener {
                 //Clear any items from the last selection of "kind"
                 which.removeAllItems();
                 whichContext.removeAll(whichContext);
+
                 for (InventoryItem row : MainWindow.the().getIdb().getAllInventoryOfKind(kindListOptions.get(kinds.getSelectedIndex()).kind)) {
+
                     whichContext.add(row);
                     which.addItem(row.getName());
+
                 }
             } catch (Exception catchall) {
                 catchall.printStackTrace();
@@ -269,24 +339,59 @@ public class MainWindow extends JFrame implements ActionListener {
             try {
                 if (((JComboBox) e.getSource()).getSelectedIndex() >= 0) {
                     InventoryItem row = whichContext.get(which.getSelectedIndex());
-                    uid.setText(String.valueOf(row.getInventoryNumber()));
-                    name.setText(row.getName());
-                    value.setText(String.valueOf(row.getValue()));
+                    //uid.setText(String.valueOf(row.getInventoryNumber()));
+                    // name.setText(row.getName());
+                    // value.setText(String.valueOf(row.getValue()));
                     if (row instanceof SerializedItem) {
                         serialLabel.setVisible(true);
                         serialNumber.setVisible(true);
-                        serialNumber.setText(((SerializedItem) row).getSerialnumber());
+                        // serialNumber.setText(((SerializedItem) row).getSerialnumber());
                     } else {
                         serialLabel.setVisible(false);
                         serialNumber.setVisible(false);
                         serialNumber.setText("");
                     }
+                    addRowtoTable(row);
                 }
+
+
             } catch (Exception catchAll2) {
                 catchAll2.printStackTrace();
             }
         }
 
     }
+
+    public void addRowtoTable(InventoryItem row) throws InvalidUserOrNoPermissionException {
+        model.setRowCount(0);
+        for (InventoryItem rows : MainWindow.the().getIdb().getAllInventoryOfKind(kindListOptions.get(kinds.getSelectedIndex()).kind)) {
+            whichContext.add(rows);
+            String serial;
+            String kind = kindListOptions.get(kinds.getSelectedIndex()).kind;
+            kind = kind.substring(kind.lastIndexOf(".") + 1).trim();
+            if (row instanceof SerializedItem) {
+                serial = ((SerializedItem) rows).getSerialnumber();
+            }
+            else {
+                serial = null;
+            }
+            Object[] thisRow = {kind , rows.getName(), rows.getValue(),serial};
+            model.addRow(thisRow);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
 

@@ -26,7 +26,7 @@ public class InventoryDatabaseMySQL implements InventoryDatabaseInterface, AppUI
             try {
                 Class.forName("com.mysql.jdbc.Driver");
                 return DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/Inventory?useSSL=false", "root", "&APx.RApkf9f$2kHk56bljS3{"
+                        "jdbc:mysql://localhost:3306/Inventory?useSSL=false", "root", "password"
                 );
             } catch (Exception any) {
                 any.printStackTrace();

@@ -53,17 +53,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/ccd/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="192" column="25" lean-forward="true" selection-start-line="192" selection-start-column="25" selection-end-line="192" selection-end-column="25" />
+            <state relative-caret-position="3332">
+              <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1829#1830#0" expanded="true" />
-                <element signature="e#1861#1862#0" expanded="true" />
-                <element signature="e#2044#2045#0" expanded="true" />
-                <element signature="e#2070#2071#0" expanded="true" />
+                <element signature="e#2122#2123#0" expanded="true" />
+                <element signature="e#2154#2155#0" expanded="true" />
+                <element signature="e#2337#2338#0" expanded="true" />
+                <element signature="e#2363#2364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,32 +72,33 @@
       <file leaf-file-name="InventoryDatabaseMySQL.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/database/InventoryDatabaseMySQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="326" column="5" lean-forward="true" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="28" column="95" lean-forward="false" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
               <folding>
-                <marker date="1524704512404" expanded="true" signature="1307:1333" ph="SELECT COUNT... Roles" />
-                <marker date="1524704512404" expanded="true" signature="1712:2315" ph="INSERT INTO Roles... " />
-                <marker date="1524704512404" expanded="true" signature="2639:2669" ph="SELECT * FRO... Roles" />
-                <marker date="1524704512404" expanded="true" signature="3811:3864" ph="SELECT * FRO... Roles" />
-                <marker date="1524704512404" expanded="true" signature="5075:5103" ph="DELETE FROM Roles... " />
-                <marker date="1524704512404" expanded="true" signature="5922:6232" ph="INSERT INTO Inventory... " />
-                <marker date="1524704512404" expanded="true" signature="5922:6378" ph="INSERT INTO Inventory... " />
-                <marker date="1524704512404" expanded="true" signature="5922:6388" ph="INSERT INTO Inventory... " />
-                <marker date="1524704512404" expanded="true" signature="6834:6879" ph="DELETE FROM Inventory... " />
-                <marker date="1524704512404" expanded="true" signature="7836:7883" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="9219:9242" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="10320:10343" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="11576:11599" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="11576:11614" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="11576:11628" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="12836:12906" ph="SELECT DISTI... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="12932:12976" ph="SELECT DISTI... Inventory" />
-                <marker date="1524704512404" expanded="false" signature="13635:13650" ph="&lt;~&gt;" />
-                <marker date="1524704512404" expanded="true" signature="13801:13853" ph="SELECT * FRO... Inventory" />
-                <marker date="1524704512404" expanded="true" signature="14777:14874" ph="INSERT INTO Audit... " />
-                <marker date="1524704512404" expanded="true" signature="14777:14931" ph="INSERT INTO Roles... " />
-                <marker date="1524704512404" expanded="true" signature="15244:15281" ph="SELECT max(u... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="1290:1316" ph="SELECT COUNT... Roles" />
+                <marker date="1525237583904" expanded="true" signature="1695:2298" ph="INSERT INTO Roles... " />
+                <marker date="1525237583904" expanded="true" signature="2622:2652" ph="SELECT * FRO... Roles" />
+                <marker date="1525237583904" expanded="true" signature="3794:3847" ph="SELECT * FRO... Roles" />
+                <marker date="1525237583904" expanded="true" signature="5058:5086" ph="DELETE FROM Roles... " />
+                <marker date="1525237583904" expanded="true" signature="5905:6361" ph="INSERT INTO Inventory... " />
+                <marker date="1525237583904" expanded="true" signature="6817:6862" ph="DELETE FROM Inventory... " />
+                <marker date="1525237583904" expanded="true" signature="7819:7866" ph="SELECT * FRO... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="9202:9225" ph="SELECT * FRO... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="10303:10326" ph="SELECT * FRO... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="11559:11611" ph="SELECT * FRO... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="12915:12959" ph="SELECT DISTI... Inventory" />
+                <marker date="1525237583904" expanded="true" signature="14760:14914" ph="INSERT INTO Audit... " />
+                <marker date="1525237583904" expanded="true" signature="15227:15264" ph="SELECT max(u... Inventory" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Audit" pinned="false" current-in-tab="false">
+        <entry file="das://table:/95eb635c/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Audit">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -106,17 +107,8 @@
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+              <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Audit" pinned="false" current-in-tab="true">
-        <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Audit">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -194,9 +186,9 @@
         <option value="$PROJECT_DIR$/src/edu/ccd/appUI/concreteObserver.java" />
         <option value="$PROJECT_DIR$/src/edu/ccd/appUI/ConcreteObserver.java" />
         <option value="$PROJECT_DIR$/src/edu/ccd/appUI/Observer.java" />
-        <option value="$PROJECT_DIR$/src/edu/ccd/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/edu/ccd/appUI/Subject.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console.sql" />
+        <option value="$PROJECT_DIR$/src/edu/ccd/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/edu/ccd/model/database/InventoryDatabaseMySQL.java" />
       </list>
     </option>
@@ -214,10 +206,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-733" />
-    <option name="y" value="33" />
-    <option name="width" value="1900" />
-    <option name="height" value="791" />
+    <option name="x" value="797" />
+    <option name="width" value="1123" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -250,6 +241,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -291,16 +285,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dependencies/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle&#10;MySQL" />
@@ -376,6 +367,11 @@
       </map>
     </option>
   </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -417,11 +413,12 @@
       <workItem from="1524530866893" duration="964000" />
       <workItem from="1524531977838" duration="8000" />
       <workItem from="1524701736757" duration="3298000" />
+      <workItem from="1525237446504" duration="198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146806000" />
+    <option name="totallyTimeSpent" value="147004000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,8 +430,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="33" width="1920" height="1047" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20184544" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -444,14 +440,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5201845" sideWeight="0.50215286" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2733564" sideWeight="0.49784714" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27252987" sideWeight="0.49784714" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20991926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18891281" sideWeight="0.49441788" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23842841" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.49441788" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23827292" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11786868" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2545748" sideWeight="0.50558215" order="2" side_tool="true" content_ui="tabs" />
@@ -466,6 +462,7 @@
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298731" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20991926" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21683967" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -520,13 +517,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/inventoryitems/CPU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/inventoryitems/Keyboard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -642,13 +632,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://src:table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Inventory">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://src:table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Inventory" />
     <entry file="file://$PROJECT_DIR$/src/edu/ccd/textUI/Notifications.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -763,13 +747,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Inventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Inventory" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -792,20 +770,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console_3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="214" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console_2.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console_3.sql" />
     <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/database/InventoryItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
@@ -833,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,24 +806,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Roles">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Roles" />
+    <entry file="das://src:table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Roles" />
     <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/security/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2002">
@@ -873,7 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,72 +837,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#214#215#0" expanded="false" />
-            <element signature="e#264#265#0" expanded="false" />
-            <element signature="e#316#317#0" expanded="false" />
-            <element signature="e#369#370#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/ccd/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="192" column="25" lean-forward="true" selection-start-line="192" selection-start-column="25" selection-end-line="192" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1861#1862#0" expanded="true" />
-            <element signature="e#2044#2045#0" expanded="true" />
-            <element signature="e#2070#2071#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dce6bc77-a82b-439c-8bde-b4914f3a4caf/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="true" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
+          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Audit" />
     <entry file="file://$PROJECT_DIR$/src/edu/ccd/model/database/InventoryDatabaseMySQL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="326" column="5" lean-forward="true" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="28" column="95" lean-forward="false" selection-start-line="28" selection-start-column="95" selection-end-line="28" selection-end-column="95" />
           <folding>
-            <marker date="1524704512404" expanded="true" signature="1307:1333" ph="SELECT COUNT... Roles" />
-            <marker date="1524704512404" expanded="true" signature="1712:2315" ph="INSERT INTO Roles... " />
-            <marker date="1524704512404" expanded="true" signature="2639:2669" ph="SELECT * FRO... Roles" />
-            <marker date="1524704512404" expanded="true" signature="3811:3864" ph="SELECT * FRO... Roles" />
-            <marker date="1524704512404" expanded="true" signature="5075:5103" ph="DELETE FROM Roles... " />
-            <marker date="1524704512404" expanded="true" signature="5922:6232" ph="INSERT INTO Inventory... " />
-            <marker date="1524704512404" expanded="true" signature="5922:6378" ph="INSERT INTO Inventory... " />
-            <marker date="1524704512404" expanded="true" signature="5922:6388" ph="INSERT INTO Inventory... " />
-            <marker date="1524704512404" expanded="true" signature="6834:6879" ph="DELETE FROM Inventory... " />
-            <marker date="1524704512404" expanded="true" signature="7836:7883" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="9219:9242" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="10320:10343" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="11576:11599" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="11576:11614" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="11576:11628" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="12836:12906" ph="SELECT DISTI... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="12932:12976" ph="SELECT DISTI... Inventory" />
-            <marker date="1524704512404" expanded="false" signature="13635:13650" ph="&lt;~&gt;" />
-            <marker date="1524704512404" expanded="true" signature="13801:13853" ph="SELECT * FRO... Inventory" />
-            <marker date="1524704512404" expanded="true" signature="14777:14874" ph="INSERT INTO Audit... " />
-            <marker date="1524704512404" expanded="true" signature="14777:14931" ph="INSERT INTO Roles... " />
-            <marker date="1524704512404" expanded="true" signature="15244:15281" ph="SELECT max(u... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="1290:1316" ph="SELECT COUNT... Roles" />
+            <marker date="1525237583904" expanded="true" signature="1695:2298" ph="INSERT INTO Roles... " />
+            <marker date="1525237583904" expanded="true" signature="2622:2652" ph="SELECT * FRO... Roles" />
+            <marker date="1525237583904" expanded="true" signature="3794:3847" ph="SELECT * FRO... Roles" />
+            <marker date="1525237583904" expanded="true" signature="5058:5086" ph="DELETE FROM Roles... " />
+            <marker date="1525237583904" expanded="true" signature="5905:6361" ph="INSERT INTO Inventory... " />
+            <marker date="1525237583904" expanded="true" signature="6817:6862" ph="DELETE FROM Inventory... " />
+            <marker date="1525237583904" expanded="true" signature="7819:7866" ph="SELECT * FRO... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="9202:9225" ph="SELECT * FRO... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="10303:10326" ph="SELECT * FRO... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="11559:11611" ph="SELECT * FRO... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="12915:12959" ph="SELECT DISTI... Inventory" />
+            <marker date="1525237583904" expanded="true" signature="14760:14914" ph="INSERT INTO Audit... " />
+            <marker date="1525237583904" expanded="true" signature="15227:15264" ph="SELECT max(u... Inventory" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/d8de06d1/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Audit">
+    <entry file="das://table:/95eb635c/dce6bc77-a82b-439c-8bde-b4914f3a4caf/Inventory.Audit">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ccd/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="397" column="0" lean-forward="true" selection-start-line="397" selection-start-column="0" selection-end-line="397" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2122#2123#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
+            <element signature="e#2337#2338#0" expanded="true" />
+            <element signature="e#2363#2364#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
